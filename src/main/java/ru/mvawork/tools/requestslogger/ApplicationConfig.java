@@ -20,9 +20,10 @@ public class ApplicationConfig {
 
     @Bean
     public FilterRegistrationBean registration(HiddenHttpMethodFilter filter) {
-        FilterRegistrationBean registration = new FilterRegistrationBean(filter);
+        FilterRegistrationBean<HiddenHttpMethodFilter> registration = new FilterRegistrationBean<>(filter);
         registration.setEnabled(false);
         return registration;
     }
+
 
 }
