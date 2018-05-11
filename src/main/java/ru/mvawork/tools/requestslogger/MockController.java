@@ -5,27 +5,27 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class MockController {
 
-    @PostMapping("/*")
+    @PostMapping(path = "/**")
     public String doPost(){
         return "";
     }
 
-    @GetMapping("/*")
+    @GetMapping(path = "/**")
     public String doGet() {
         return "";
     }
 
-    @DeleteMapping("/*")
+    @DeleteMapping(path = "/**")
     public String doDelete() {
         return "";
     }
 
-    @PutMapping("/*")
+    @PutMapping(path = "/**")
     public String doPut() {
         return "";
     }
 
-    @PatchMapping("/*")
+    @PatchMapping(path = "/**")
     public String doPatch() {
         return "";
     }
