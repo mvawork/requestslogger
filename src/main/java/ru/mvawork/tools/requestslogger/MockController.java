@@ -12,7 +12,7 @@ public class MockController {
 
     @GetMapping(path = "/**")
     public String doGet() {
-        return "";
+        return "ok";
     }
 
     @DeleteMapping(path = "/**")
